@@ -1,21 +1,22 @@
-package amigos;
+package hoja2;
 
-public class Ejercicio3BisHoja2 {
+public class Ejercicio3Hoja2{
 
 	public static void main(String[] args) {
 		int a = 2, b = 1, sum1 = 0, sum2 = 0;
-		for (; a != sum2 || b != sum1; a++) {
+		while (a != sum2 || b != sum1) {
 			sum1 = sumDividers(a);
-			for (; (a != sum2 || b != sum1) && b < a;b++) {
+			while ((b!=sum1 || a!=sum2) && b < a) {
 				sum2 = sumDividers(b);
+				if (a != sum2 || b != sum1)
+					b++;
 			}
-			if (a != sum2 || b != sum1)
-				b=1;
-
+			if (b == a && (a != sum2 || b != sum1)) {
+				a++;
+				b = 1;
+			}
 		}
 		System.out.println(a + " y " + b + " son números amigos");
-
-
 	}
 
 	public static int sumDividers(int n) {

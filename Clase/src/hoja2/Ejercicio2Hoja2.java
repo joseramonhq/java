@@ -1,4 +1,4 @@
-package amigos;
+package hoja2;
 import static java.lang.System.out;//Puedo eliminar System del código
 public class Ejercicio2Hoja2 {
 

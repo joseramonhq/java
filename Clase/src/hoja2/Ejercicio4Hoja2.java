@@ -1,4 +1,4 @@
-package amigos;
+package hoja2;
 
 public class Ejercicio4Hoja2 {
 
