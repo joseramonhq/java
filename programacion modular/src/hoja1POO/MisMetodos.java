@@ -1,4 +1,4 @@
-package hoja1;
+package hoja1POO;
 
 public class MisMetodos {
 	static final double PI = Math.PI;
@@ -120,6 +120,12 @@ public class MisMetodos {
 			if(MisMetodos.bEsDivisorDeA(b, div))
 				sum2+=div;
 		return (a==sum2 && b==sum1);
+	}
+	public static int mcm(int...a) {
+		
+		int prod=1;
+		
+		
 	}
 		
 

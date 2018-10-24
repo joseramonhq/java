@@ -1,13 +1,11 @@
 package repasoPrimeraEv;
 
-import java.util.Scanner;
-
 public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String num="";
-		switch(new Scanner(System.in).nextInt()) {
+		switch(InputData.readInt()) {
 		case 0:
 			num="Cero";
 			break;

@@ -4,7 +4,7 @@ public class MisMetodos {
 	static final double PI = Math.PI;
 
 	public static double areaCirculo() {//////////////////////////// ejercicio 1
-		return PI * InputData.readInt();
+		return PI * Math.pow(InputData.readInt(),2);
 	}
 
 	public static void ecuacionSegundoGrado() {
@@ -61,24 +61,24 @@ public class MisMetodos {
 	}
 	
 	public static void mcd(int n1, int n2) {
-		int pro=1;
-		int div=2;
-		while(n1!=1 || n2!=1) {
-			div=2;
-			while(!(n1%div==0 && n2%div==0) || n1<=Math.min(n1, n2)) {
-				div++;
-			
-			}
-			if(primo(div)) {
-				System.out.println(div);
+		
+		int div=1, pro=1;
+		while((n1!=1 || n2!=1) && div<=Math.min(n1, n2)) {
+			div++;
+			if(n1%div==0 && n2%div==0) {
 				pro*=div;
+				n1/=div;
+				n2/=div;
+				div=1;
+						
 			}
-			n1/=div;
-			n2/=div;
 		}
 		System.out.println("MCD = "+pro);
-		
 	}
+
+		
+		
+	
 
 	
 

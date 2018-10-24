@@ -4,7 +4,7 @@ public class Ejercicio25 {
 
 	public static void main(String[] args) {
 		
-		MisMetodos.mcd(5690, 2234);
+		MisMetodos.mcd(569013450, 4500);
 
 	}
 
